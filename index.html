@@ -1,12 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Modern CV</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://kit.fontawesome.com/74f1a27e08.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./plugins/headline/headline.css">
+    <!-- <link
+  rel="stylesheet"
+  href="https://unicons.iconscout.com/release/v4.0.0/css/unicons.css"
+/> -->
+
 </head>
+
 <body>
-    
+    <nav>
+        <div class="container inner">
+            <div class="logo">
+                <i class="fa-solid fa-headset"></i>
+                NEXTGEN CV
+            </div>
+            <div class="icon">
+                <button>
+                    <i class="fa-solid fa-print"></i>
+                    Print
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="profile" id="profile__ripple">
+            <div class="left">
+                <div class="avatar__block">
+                    <img src="./Images/user.png" alt="">
+                    <span>
+                        <i class="fa-solid fa-comment-dots"></i>
+                    </span>
+                </div>
+                <div>
+                    <h2>Souvik Halder</h2>
+                    <p class="cd-headline loading-bar">
+                        <!-- This is for the loading bar portion we need to copy the headline plugins for that which are in the plugins folder -->
+                        <span class="cd-words-wrapper">
+                            <b class="is-visible">UI/UX Designer</b>
+                            <b>Angular Developer</b>
+                            <b>React Native Developer</b>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="right">
+               <ul class="contact">
+              <li>
+                <i class="fa-solid fa-phone-volume"></i>
+                <strong>Phone: </strong> +91 6296251770
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <strong>Email: </strong> souvikhaldea@gmail.com
+              </li>
+               </ul>
+               <ul class="socials">
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+               </ul>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./plugins/headline/headline.js"></script>
+    <script src="./plugins/ripples.js"></script>
+
+
 </body>
+
 </html>
