@@ -7,4 +7,12 @@ jQuery(document).ready(function(){
         perturbance: 0.01,
         resolution:512,
       });
+      const bars=document.querySelectorAll('.progress__bar');
+      console.log(bars);
+      bars.forEach(function(bar){
+        let percentage=bar.dataset.percent;
+        let tooltip=bar.children[0];
+        tooltip.innerText=percentage+'%';
+        bar.style.width=percentage+'%';
+      })
 });
