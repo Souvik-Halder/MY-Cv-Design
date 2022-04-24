@@ -131,4 +131,10 @@ jQuery(document).ready(function () {
         autoplaySpeed: 2000,
         arrows:false
     })
+    let printbtn=document.getElementById('print-btn');
+    printbtn.onclick=()=>{
+        window.print();
+    }
+    
+
 });

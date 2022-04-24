@@ -665,3 +665,17 @@ footer{
         grid-template-columns: 1fr;
     }
 }
+
+/* To print the page with background graphics */
+@media print {
+    tr.vendorListHeading {
+        background-color: #1a4567 !important;
+        -webkit-print-color-adjust: exact; 
+    }
+}
+
+@media print {
+    .vendorListHeading th {
+        color: white !important;
+    }
+}
