@@ -119,4 +119,16 @@ jQuery(document).ready(function () {
             enable: true
         }
     });
+
+    //Slider Code starts from here
+    //This is for slider part 
+    //First search slick slider in google just link the css and js file into the index.html file and this is ready to use 
+    //We don't need any plugins to use that
+    $('.slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows:false
+    })
 });
