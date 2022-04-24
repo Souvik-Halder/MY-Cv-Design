@@ -383,3 +383,43 @@ section.counter__section >div h5{
     color: var(--fade);
 
 }
+section.work .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+section.work .wrapper .portfolio .tabs ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+section.work .wrapper .portfolio .tabs ul li a{
+    color: var(--fade);
+    border-bottom: 1px solid transparent ;
+    padding:  10px 15px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+section.work .wrapper .portfolio .tabs ul li a.active{
+    border-color:var(--info);
+    color: var(--info);
+    /* This will make the animation smooth on the links */
+    transition: all 0.3s ease-in-out;
+}
+section.work .wrapper .portfolio .portfolio__wrapper{
+    margin-top: 4rem;
+    /* Because isotope don't work on grid  */
+    /* display: grid;
+    grid-template-columns: repeat(3,1fr); */
+    display: flex;
+}
+section.work .wrapper .portfolio .portfolio__wrapper .item{
+    /* This is for the isotope */
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+section.work .wrapper .portfolio .portfolio__wrapper a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
